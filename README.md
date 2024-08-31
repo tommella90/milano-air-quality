@@ -1,46 +1,24 @@
-# AIR PARTICLES 
+# How to use
 
-## SO2 (Sulfur Dioxide):
+## Download data
+You can directly download the data running 
+```python download_from_gcloud.py```
 
-A gas typically produced by burning fossil fuels, like coal or oil, and by volcanic eruptions.
-High levels of SO2 can cause respiratory problems and aggravate existing heart disease.
-It's also a significant component in the formation of acid rain.
+Or scrape them and clean them running: 
+```python scraping.py``` 
 
+Note tath this will scrape date from 2010, which will take long. 
+You can modify the START_DATE inside the code, at the beginning. 
 
-## PM10 (Particulate Matter with diameter less than 10 micrometers):
+```pytnon clean_data.py``` 
+will clean the dataset. 
 
-These are tiny particles or droplets in the air that are two and one half microns or less in width.
-PM10 particles can include dust, pollen, mold, and other organic chemicals and can be harmful when inhaled, leading to respiratory issues and other health problems.
+In both cases, the data folder will be populated. 
 
+## Streamlit app
+Available at: 
+https://milano-air-quality-x3ehkuzdtuvdyvwz4omep5.streamlit.app/
 
-## PM2.5 (Particulate Matter with diameter less than 2.5 micrometers):
-
-These are even smaller particles than PM10 and can penetrate deep into the lungs and even into the bloodstream.
-PM2.5 is considered more dangerous than PM10 due to its ability to cause more severe health issues, including lung and heart diseases.
-
-
-## NO2 (Nitrogen Dioxide):
-
-A reddish-brown gas with a characteristic sharp, biting odor and is a prominent air pollutant.
-NO2 forms from emissions from cars, trucks and buses, power plants, and off-road equipment.
-It contributes to the development of respiratory problems and can aggravate existing heart disease.
-
-
-## CO (Carbon Monoxide):
-
-A colorless, odorless gas that is harmful when inhaled in large amounts.
-It's produced from incomplete combustion of fossil fuels, like in car exhausts.
-High levels of CO can be fatal, as it reduces the amount of oxygen that can be transported in the bloodstream to critical parts of the body.
-
-
-## O3 (Ozone):
-
-At ground level, ozone is a harmful air pollutant and a significant component of smog.
-Ozone can cause a variety of health problems, particularly for the lungs and respiratory system.
-
-
-## C6H6 (Benzene):
-
-A colorless or light yellow liquid at room temperature, with a sweet odor.
-It's a natural part of crude oil, gasoline, and cigarette smoke.
-Benzene is a known carcinogen, particularly linked to leukemia.
+or run: 
+```pipenv shell```
+```streamlit run streamlit_app.py```

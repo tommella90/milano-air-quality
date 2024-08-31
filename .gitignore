@@ -1,0 +1,10 @@
+# data
+/data
+
+# env
+Pipfile
+Pipefile.lock
+
+# other
+playground.ipynb
+main.py
